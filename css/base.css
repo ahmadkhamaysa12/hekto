@@ -2,43 +2,36 @@
   --primary-blue: #0d0e43;
   --primary-pink: #fb2e86;
   --mainFont: "Lato", sans-serif;
+  --gray:#8A8FB9;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--mainFont);
+  font-style: normal;
 }
 ul {
   list-style-type: none;
 }
+
 a {
   text-decoration: none;
   font-family: var(--mainFont);
 }
-.dark-blue{
-    color: var(--primary-blue);
+.dark-blue {
+  color: var(--primary-blue);
 }
-.main-pink{
-    color: var(--primary-pink);
+.main-pink {
+  color: var(--primary-pink);
 }
-.container {
-  width: calc(100% - 320px);
-  margin: 0 auto;
-}
+
 .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
-.d-flex {
-  display: flex;
-  flex-wrap: wrap;
-}
-.flex-direction-c {
-  flex-direction: column;
-}
-
 .gap-5px {
   gap: 5px;
 }
@@ -53,4 +46,22 @@ a {
 }
 .gap-25px {
   gap: 25px;
+}
+.gap-50px {
+  gap: 50px;
+}
+.btn {
+  padding: 16px 40px 17px;
+  color: #fff;
+  border: none;
+}
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-direction-c {
+  flex-direction: column;
+}
+.pink-btn {
+  background-color: var(--primary-pink);
 }
