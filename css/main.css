@@ -44,7 +44,7 @@ header {
   align-items: center;
 }
 .container {
-  width: calc(100% - 320px);
+  width: calc(100% - 200px);
   margin: 0 auto;
 }
 @media screen and (max-width: 1200px) {
@@ -60,7 +60,7 @@ header {
 }
 @media screen and (max-width: 1552px) {
   .container {
-    width: calc(100% - 150px);
+    width: calc(100% - 130px);
   }
 }
 @media screen and (max-width: 1350px) {
@@ -99,14 +99,13 @@ header {
     justify-content: center;
   }
   .email-form {
-
     gap: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .email-form input{
+  .email-form input {
     width: 300px;
   }
 
@@ -183,4 +182,99 @@ footer .row {
 
 .footer-item nav a {
   color: var(--gray);
+}
+.color-btn {
+  padding: 2px 6px;
+  border-radius: 10px;
+  border: none;
+}
+.c-btn-1 {
+  background-color: #05e6b7;
+}
+.c-btn-2 {
+  background-color: #f701a8;
+}
+.c-btn-3 {
+  background-color: #00009d;
+}
+.pro-img img {
+  width: 250px;
+  height: 250px;
+  padding-top: 30px;
+  object-fit: contain;
+  transition: width 0.2s;
+  transition: height 0.2s;
+  transition: padding 0.2s;
+}
+.pro-img {
+  background-color: var(--gray-bg);
+  padding-bottom: 5px;
+}
+.product {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 25%);
+  transition: color 0.5s;
+}
+.featured-prodacts h2 {
+  margin-bottom: 48px;
+}
+.featured-prodacts {
+  padding: 50px 0px;
+}
+.pro-info {
+  padding: 15px 72px;
+  transition: background-color 0.3s;
+}
+
+.pro-info p,
+h3,
+span {
+  transition: color 0.3s;
+}
+.product:hover {
+  .pro-info {
+    background-color: var(--med-blue);
+  }
+  .sec-btn {
+    display: inline;
+  }
+  .pro-img img {
+    width: 190px;
+    height: 190px;
+    object-fit: contain;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .pro-info p,
+  h3,
+  span {
+    color: white;
+  }
+  .c-btn-3 {
+    background-color: white;
+  }
+  .f-top-btn {
+    display: block;
+  }
+}
+.color-btn:focus {
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+  outline: 1px solid black; 
+  outline-offset: -1px;
+}
+.f-top-btn {
+  color: #19a1f1;
+}
+.f-top-btn {
+  transition: background-color 0.1s;
+}
+.product .f-top-btn:hover {
+  background-color: #eeeffb;
+  color: #2f1ac4;
+}
+.top-icon {
+  background-color: var(--gray-bg);
+  gap: 15px;
+  padding-left: 10px;
+  padding-top: 10px;
 }
