@@ -57,6 +57,9 @@ header {
   .search-bar {
     display: none;
   }
+  .client {
+    width: calc((100% - 75px) / 6);
+  }
 }
 @media screen and (max-width: 1552px) {
   .container {
@@ -118,6 +121,9 @@ header {
   .container {
     width: calc(100% - 70px);
   }
+  .client {
+    width: calc((100% - 30px) / 3);
+  }
   .footer .outer {
     flex-direction: column;
     align-items: center;
@@ -145,6 +151,9 @@ header {
   .footer-item {
     width: 100%;
     gap: 15px;
+  }
+  .client {
+    width: calc((100% - 15px) / 2);
   }
 }
 footer {
@@ -196,6 +205,20 @@ footer .row {
 }
 .c-btn-3 {
   background-color: #00009d;
+}
+.clients .row {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 15px;
+}
+.client {
+  width: calc((100% - 120px) / 9);
+}
+.clients {
+  padding: 40px 0;
+}
+.clients img {
+  width: 100px;
 }
 .pro-img img {
   width: 250px;
@@ -258,8 +281,8 @@ span {
   }
 }
 .color-btn:focus {
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
-  outline: 1px solid black; 
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  outline: 1px solid black;
   outline-offset: -1px;
 }
 .f-top-btn {
@@ -277,4 +300,11 @@ span {
   gap: 15px;
   padding-left: 10px;
   padding-top: 10px;
+}
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+.clients img {
+  width: 100px;
 }
