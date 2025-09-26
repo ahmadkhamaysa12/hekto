@@ -6,12 +6,14 @@
   --gray-bg: #f6f7f7;
   --med-blue: #131e75;
   --green: #08d15f;
+  --secFont:"Josefin Sans", sans-serif;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: var(--mainFont);
+  
   font-style: normal;
 }
 ul {
@@ -23,6 +25,7 @@ ul {
   justify-content: center;
   text-align: center;
 }
+
 a {
   text-decoration: none;
   font-family: var(--mainFont);
@@ -66,6 +69,7 @@ a {
   padding: 16px 40px 17px;
   color: #fff;
   border: none;
+  border-radius: 2px;
 }
 .sec-btn {
   background-color: var(--green);
@@ -103,6 +107,7 @@ a {
 }
 .flex-start {
   justify-content: flex-start;
+  align-items: flex-start;
 }
 .f-top-btn {
     display: none;

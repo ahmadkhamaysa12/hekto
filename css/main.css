@@ -47,11 +47,13 @@ header {
   width: calc(100% - 200px);
   margin: 0 auto;
 }
- 
 
 @media screen and (max-width: 1200px) {
   .navbar i {
     display: block;
+  }
+  .lamp-div {
+    display: none;
   }
   .navbar ul {
     display: none;
@@ -110,20 +112,16 @@ header {
     justify-content: center;
     align-items: center;
   }
-  .email-form input {
-    width: 300px;
-  }
-
   .email-form button {
     width: 100%;
     margin: auto;
   }
 }
-.news-letter{
+.news-letter {
   background-image: url(../img/Rectangle.webp);
   padding: 170px 0px 100px;
 }
-.news-letter h2{
+.news-letter h2 {
   color: var(--med-blue);
 }
 @media screen and (max-width: 992px) {
@@ -137,6 +135,16 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+}
+@media screen and (max-width: 720px) {
+  .hero-section .container .row {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .hero-section .container .more-blablabla {
+    align-items: center;
+    text-align: center;
   }
 }
 @media screen and (max-width: 640px) {
@@ -156,6 +164,16 @@ header {
     justify-content: center;
     align-items: center;
     gap: 50px;
+  }
+  .email-form {
+    width: calc(100% - 70px);
+    gap: 20px;
+  }
+  .left-side .email-form input {
+    width: 100%;
+  }
+  .email-form button {
+    margin: auto;
   }
   .footer-item {
     width: 100%;
@@ -179,21 +197,18 @@ footer {
   padding-left: 20px;
 }
 .email-form button {
-  width: 135px;
   margin: auto -138px auto;
   height: 45px;
   border-radius: 3px;
   z-index: 0;
+  align-items: center;
 }
-.email-form {
-  display: flex;
-}
+
 footer .row {
   align-items: normal;
   gap: 30px;
 }
 .left-side {
-  width: 300px;
   color: var(--gray);
   align-items: flex-start;
 }
@@ -251,6 +266,10 @@ footer .row {
 }
 .featured-prodacts {
   padding: 50px 0px;
+}
+.featured-prodacts h2 {
+  color: var(--med-blue);
+  font-size: 2rem;
 }
 .pro-info {
   padding: 15px 72px;
@@ -310,10 +329,39 @@ span {
   padding-left: 10px;
   padding-top: 10px;
 }
-img {
-  overflow-clip-margin: content-box;
-  overflow: clip;
-}
+
 .clients img {
   width: 100px;
+}
+.hero-section {
+  background-color: var(--gray-bg);
+  position: relative;
+  padding: 40px 0px;
+}
+.lamp-div {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  max-width: 20%;
+}
+.lamp-div img {
+  max-width: 70%;
+  height: auto;
+  top: 0px;
+}
+.blablabla {
+  flex: 1 0 60%;
+  flex-wrap: nowrap;
+}
+.more-blablabla h1 {
+  font-family: var(--secFont);
+}
+.more-blablabla span {
+  color: var(--primary-pink);
+}
+.off-50 {
+  flex: 1 0 40%;
+}
+.off-50 img {
+  width: 100%;
 }
