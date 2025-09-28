@@ -371,8 +371,9 @@ span {
   padding: 25px 25px 0px;
 }
 
-.l-p-img img {
-  width: auto;
+.l-p-img .chair {
+  width: 250px;
+  height: 250px;
   object-fit: contain;
 }
 .l-p-info {
