@@ -93,6 +93,9 @@ header {
     flex-direction: column;
     align-items: center;
   }
+  .row .service{
+    width: calc((100% - 50px)/3);
+  }
   .footer-item {
     width: auto;
   }
@@ -142,6 +145,9 @@ header {
     flex-direction: column;
     gap: 25px;
   }
+    .row .service{
+    width: calc((100% - 50px)/2);
+  }
   .hero-section .container .more-blablabla {
     align-items: center;
     text-align: center;
@@ -158,6 +164,9 @@ header {
 @media screen and (max-width: 400px) {
   .container {
     width: calc(100% - 30px);
+  }
+    .row .service{
+    width: 100%;
   }
   .rightside .row {
     flex-direction: column;
@@ -413,6 +422,7 @@ span {
 }
 .leatest-prodacts ul{
   padding: 20px;
+  justify-content: center;
   color: var(--med-blue);
 }
 .leatest-prodacts ul li{
@@ -450,4 +460,29 @@ span {
 .leatest-prodact .f-top-btn:hover {
   background-color: #eeeffb;
   color: #2f1ac4;
+}
+.what-shopex-offer .row{
+  padding: 25px;
+}
+.service{
+  width: calc((100% - 75px)/4);
+  padding: 10px;
+  gap: 10px;
+}
+.service h3{
+  color: var(--med-blue);
+}
+.service span{
+  
+  color: var(--gray);
+}
+@media screen and (max-width: 640px) {
+.l-p-img .chair {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+.leatest-prodacts{
+  padding: 50px 0px;
+}
 }
