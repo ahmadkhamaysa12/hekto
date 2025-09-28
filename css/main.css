@@ -304,7 +304,7 @@ span {
   .c-btn-3 {
     background-color: white;
   }
-  .f-top-btn {
+   .f-top-btn {
     display: block;
   }
 }
@@ -364,4 +364,89 @@ span {
 }
 .off-50 img {
   width: 100%;
+}
+
+.l-p-img {
+  background-color: var(--gray-bg);
+  padding: 25px 25px 0px;
+}
+
+.l-p-img img {
+  width: auto;
+  object-fit: contain;
+}
+.l-p-info {
+  padding: 15px 0px 5px;
+}
+.l-p-info h3 {
+  color: var(--med-blue);
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 5%);
+}
+.l-p-info .offer-price {
+  font-family: var(--secFont);
+  color: var(--med-blue);
+}
+.l-p-info .normal-price {
+  text-decoration: line-through;
+  color: var(--primary-pink);
+  font-size: 14px;
+}
+.leatest-prodacts .leatest-prodact {
+  position: relative;
+  flex: 1 0 calc((100% - 60px) / 3);
+  .sale-logo,
+  .top-icon,
+  .f-top-btn,
+  .l-p-img .f-top-btn{
+    transition: all 0.3s ease-in-out;
+  }
+}
+.leatest-prodacts{
+  padding: 50px;
+}
+.leatest-prodacts h2{
+  font-family: var(--secFont);
+  color: var(--med-blue);
+  font-size: 3rem;
+  font-weight: bold;
+}
+.leatest-prodacts ul{
+  padding: 20px;
+  color: var(--med-blue);
+}
+.leatest-prodacts ul li{
+  transition: all 0.2s;
+  font-size: 1.2rem;
+}
+.leatest-prodacts ul li:hover{
+  text-decoration: underline;
+  color: var(--primary-pink);
+}
+.leatest-prodacts .top-icon {
+  position: absolute;
+  top: 30%;
+}
+.l-p-img .sale-logo{
+  position: absolute;
+  width: auto;
+  display: none;
+  left: 5%;
+}
+.leatest-prodact:hover {
+  .sale-logo{
+    display: block;
+  }
+  .top-icon{
+    background-color: transparent;
+  }
+  .f-top-btn {
+    display: block;
+  }
+  .l-p-img {
+    background-color: transparent;
+  }
+}
+.leatest-prodact .f-top-btn:hover {
+  background-color: #eeeffb;
+  color: #2f1ac4;
 }

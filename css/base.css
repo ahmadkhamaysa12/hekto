@@ -3,7 +3,7 @@
   --primary-pink: #fb2e86;
   --mainFont: "Lato", sans-serif;
   --gray: #8a8fb9;
-  --gray-bg: #f6f7f7;
+  --gray-bg: #ecf1f1;
   --med-blue: #131e75;
   --green: #08d15f;
   --secFont:"Josefin Sans", sans-serif;
@@ -20,11 +20,6 @@ ul {
   list-style-type: none;
 }
 
-.align-center {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
 
 a {
   text-decoration: none;
@@ -115,4 +110,13 @@ a {
   border: none;
   border-radius: 50%;
   padding: 7px;
+}
+.align-center {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.flex-end{
+  justify-content: flex-end;
+  align-items: flex-end;
 }
