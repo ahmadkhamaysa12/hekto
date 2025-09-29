@@ -134,6 +134,9 @@ header {
   .container {
     width: calc(100% - 70px);
   }
+  .leatest-blog .l-blog {
+    width: calc((100% - 40px) / 2);
+  }
   .client {
     width: calc((100% - 30px) / 3);
   }
@@ -161,8 +164,14 @@ header {
   .container {
     width: calc(100% - 40px);
   }
+
   .right-side .row {
     flex-direction: column;
+  }
+  .leatest-blog .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -176,7 +185,11 @@ header {
   .t-c-img {
     padding: 0px;
   }
-
+  .leatest-blog .l-blog {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto 20px auto;
+  }
   .rightside .row {
     flex-direction: column;
     justify-content: center;
@@ -492,6 +505,12 @@ span {
     height: 150px;
     object-fit: contain;
   }
+
+  .leatest-blog .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .leatest-prodacts {
     padding: 50px 0px;
   }
@@ -532,6 +551,7 @@ span {
     height: 180px;
     object-fit: contain;
   }
+
   .row .t-c-img img {
     width: 180px;
     height: 180px;
@@ -590,4 +610,56 @@ span {
     bottom: 7%;
     left: calc(50% - 40px);
   }
+}
+.leatest-blog h2 {
+  margin-bottom: 40px;
+  color: var(--med-blue);
+  font-family: var(--secFont);
+  font-size: 3rem;
+  text-align: center;
+}
+.l-blog .i-b-img img {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  object-fit: contain;
+}
+.l-blog {
+  gap: 19px;
+  flex-direction: column;
+  width: calc((100% - 78px) / 3);
+  object-fit: contain;
+  justify-content: center;
+  padding-bottom: 35px;
+}
+.l-b-info span {
+  font-size: 16px;
+  font-weight: normal;
+  color: var(--gray);
+}
+.l-b-info {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: start;
+}
+.no-img {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+  padding-left: 13px;
+}
+
+.l-b-info a {
+  font-size: 16px;
+  color: var(--med-blue);
+  text-decoration: underline;
+}
+.l-blog:hover h3,
+.l-blog:hover .l-b-info a {
+  color: var(--primary-pink);
+  transition: all 0.3s ease-in-out;
 }
